@@ -3,13 +3,13 @@ from typing import Coroutine, List
 
 
 async def run_first_service():
-    asyncio.sleep(1)
+    await asyncio.sleep(1)
     print("First service is run forever, press Ctrl+C to stop")
     await asyncio.Future()
     
 
 async def run_second_service():
-    asyncio.sleep(1)
+    await asyncio.sleep(1)
     print("Second service is run forever, press Ctrl+C to stop")
     await asyncio.Future()
     
